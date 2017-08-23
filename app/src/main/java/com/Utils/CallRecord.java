@@ -1,4 +1,4 @@
-package com.aykuttasil.callrecord;
+package com.Utils;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,9 +7,9 @@ import android.media.MediaRecorder;
 import android.os.Environment;
 import android.util.Log;
 
-import com.aykuttasil.callrecord.helper.PrefsHelper;
-import com.aykuttasil.callrecord.receiver.CallRecordReceiver;
-import com.aykuttasil.callrecord.service.CallRecordService;
+import com.helper.PrefsHelper;
+import com.receiver.CallRecordReceiver;
+import com.service.CallRecordService;
 
 /**
  * Created by aykutasil on 20.10.2016.

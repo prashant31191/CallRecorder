@@ -1,11 +1,12 @@
-package com.aykuttasil.callrecord.receiver;
+package com.receiver;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.media.MediaRecorder;
 import android.util.Log;
 
-import com.aykuttasil.callrecord.CallRecord;
-import com.aykuttasil.callrecord.helper.PrefsHelper;
+import com.Utils.CallRecord;
+import com.helper.PrefsHelper;
 
 import java.io.File;
 import java.io.IOException;
@@ -37,23 +38,28 @@ public class CallRecordReceiver extends PhoneCallReceiver {
 
     }
 
+    @SuppressLint("LongLogTag")
     @Override
     protected void onIncomingCallAnswered(Context context, String number, Date start) {
+        Log.i("=onIncomingCallAnswered=","=number="+number);
         startRecord(context, "incoming", number);
     }
 
     @Override
     protected void onIncomingCallEnded(Context context, String number, Date start, Date end) {
+        Log.i("=onIncomingCallEnded=","=number="+number);
         stopRecord(context);
     }
 
     @Override
     protected void onOutgoingCallStarted(Context context, String number, Date start) {
+        Log.i("=onOutgoingCallStarted=","=number="+number);
         startRecord(context, "outgoing", number);
     }
 
     @Override
     protected void onOutgoingCallEnded(Context context, String number, Date start, Date end) {
+        Log.i("=onOutgoingCallEnded=","=number="+number);
         stopRecord(context);
     }
 

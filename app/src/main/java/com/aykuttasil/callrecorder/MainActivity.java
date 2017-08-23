@@ -5,7 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 
-import com.aykuttasil.callrecord.CallRecord;
+import com.Utils.CallRecord;
+
 
 public class MainActivity extends AppCompatActivity {
 

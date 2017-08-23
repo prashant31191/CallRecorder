@@ -1,4 +1,4 @@
-package com.aykuttasil.callrecord.receiver;
+package com.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

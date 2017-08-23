@@ -2,8 +2,8 @@ package com.aykuttasil.callrecorder;
 
 import android.content.Context;
 
-import com.aykuttasil.callrecord.CallRecord;
-import com.aykuttasil.callrecord.receiver.CallRecordReceiver;
+import com.Utils.CallRecord;
+import com.receiver.CallRecordReceiver;
 
 import java.util.Date;
 
